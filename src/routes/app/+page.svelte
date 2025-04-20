@@ -1,7 +1,8 @@
 <script lang="ts">
-	import HeroBanner from '$lib/component/local/app/index/HeroBanner.svelte';
-	import SoftwareCategory from '$lib/component/local/app/index/SoftwareCategory.svelte';
-</script>
+	import { goto } from "$app/navigation";
+	import { onMount } from "svelte";
 
-<HeroBanner />
-<SoftwareCategory />
+  onMount(() => {
+    goto('/app/website-app/')
+  })
+  </script>
